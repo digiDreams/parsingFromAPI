@@ -11,6 +11,8 @@
 		7B2B4DEB28E2EB0900314347 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2B4DEA28E2EB0900314347 /* ContentView.swift */; };
 		7B2B4DED28E2EB0C00314347 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B2B4DEC28E2EB0C00314347 /* Assets.xcassets */; };
 		7B2B4DF028E2EB0C00314347 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B2B4DEF28E2EB0C00314347 /* Preview Assets.xcassets */; };
+		7B2B4DF728E2F45E00314347 /* gitAPIDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2B4DF628E2F45E00314347 /* gitAPIDataModel.swift */; };
+		7B2B4DF928E2FA4B00314347 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2B4DF828E2FA4A00314347 /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		7B2B4DEA28E2EB0900314347 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7B2B4DEC28E2EB0C00314347 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B2B4DEF28E2EB0C00314347 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7B2B4DF628E2F45E00314347 /* gitAPIDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gitAPIDataModel.swift; sourceTree = "<group>"; };
+		7B2B4DF828E2FA4A00314347 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				7B2B4DE828E2EB0900314347 /* parsingFromAPIApp.swift */,
 				7B2B4DEA28E2EB0900314347 /* ContentView.swift */,
+				7B2B4DF628E2F45E00314347 /* gitAPIDataModel.swift */,
+				7B2B4DF828E2FA4A00314347 /* SearchView.swift */,
 				7B2B4DEC28E2EB0C00314347 /* Assets.xcassets */,
 				7B2B4DEE28E2EB0C00314347 /* Preview Content */,
 			);
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B2B4DF928E2FA4B00314347 /* SearchView.swift in Sources */,
+				7B2B4DF728E2F45E00314347 /* gitAPIDataModel.swift in Sources */,
 				7B2B4DEB28E2EB0900314347 /* ContentView.swift in Sources */,
 				7B2B4DE928E2EB0900314347 /* parsingFromAPIApp.swift in Sources */,
 			);
