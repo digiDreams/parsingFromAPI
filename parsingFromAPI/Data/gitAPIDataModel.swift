@@ -11,7 +11,7 @@ import SwiftUI
 struct GetGitUser: Decodable {
     var login: String // nom
     var avatar_url: String // image
-    var public_repos: Int // nb de repos
+    var public_repos: Int? // nb de repos
 //    var user_url: String //+ userName
 }
 

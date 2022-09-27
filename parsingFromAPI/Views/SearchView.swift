@@ -9,19 +9,21 @@ import SwiftUI
 
 struct SearchView: View {
     @State var searchText: String
-    @State var user = GetGitUser(login: "", avatar_url: "", public_repos: 0)
+    @State var user = GetGitUser(login: "", avatar_url: "", public_repos: nil)
     var body: some View {
         NavigationView{
             VStack{
                 Text("")
                     .searchable(text: $searchText)
                 
-                AsyncImage(url: URL(string: user.avatar_url))
-//                    .frame(maxWidth: 200, maxHeight: 200)
+                AsyncImage(url: URL(string: user.avatar_url), scale: 2)
+                    .cornerRadius(16)
+                    .padding()
                 Text(user.login)
                     .bold()
+                    .padding()
                 HStack {
-                    Text(String(user.public_repos))
+                    Text(String(user.public_repos ?? 0))
                     Text("repositories à ce jour")
                 }
                 
@@ -52,6 +54,6 @@ struct SearchView: View {
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchView(searchText: "sjkfhskf", user: GetGitUser(login: "", avatar_url: "", public_repos: 0))
+        SearchView(searchText: "sjkfhskf", user: GetGitUser(login: "", avatar_url: "", public_repos: nil))
     }
 }
