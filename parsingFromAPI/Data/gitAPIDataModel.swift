@@ -6,16 +6,20 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct getGitUser: Decodable {
-    var user_url : String //+ userName
+struct GetGitUser: Decodable {
+    var login: String // nom
+    var avatar_url: String // image
+    var public_repos: Int // nb de repos
+//    var user_url: String //+ userName
 }
 
-var userName: String = ""
 
 
-func getGitUserProfile() async throws -> String {
-    guard let url = URL(string: "https://api.github.com/users/{\(userName)}")
+
+func getGitUserProfile(userName: String) async throws -> (GetGitUser) {
+    guard let url = URL(string: "https://api.github.com/users/\(userName)")
     else {
         fatalError("Missing URL")
     }
@@ -26,8 +30,7 @@ func getGitUserProfile() async throws -> String {
     else {
         fatalError("Error while fetching data")
     }
-    let decoded = try JSONDecoder().decode(getGitUser.self, from: data)
-    let userDisplay = decoded.user_url
-    return userDisplay
+    let decoded = try JSONDecoder().decode(GetGitUser.self, from: data)
+    return decoded
     
 }

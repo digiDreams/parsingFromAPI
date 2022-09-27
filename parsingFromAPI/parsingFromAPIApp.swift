@@ -11,7 +11,7 @@ import SwiftUI
 struct parsingFromAPIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SearchView(searchText: "", user: GetGitUser(login: "", avatar_url: "", public_repos: 0))
         }
     }
 }
